@@ -1,0 +1,886 @@
+2022-05-30 11:09:05,981 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting PlatesApplication using Java 11.0.13 on Kang-YongHo-MacBookPro.local with PID 41364 (/Users/dlo/IdeaProjects/plates/target/classes started by dlo in /Users/dlo/IdeaProjects/plates)
+2022-05-30 11:09:05,984 INFO org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2022-05-30 11:09:06,270 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-30 11:09:06,272 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2022-05-30 11:09:06,468 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-05-30 11:09:06,474 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-05-30 11:09:06,475 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-30 11:09:06,500 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-05-30 11:09:06,501 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 506 ms
+2022-05-30 11:09:06,516 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] jpa-hikari-pool - Starting...
+2022-05-30 11:09:06,669 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] jpa-hikari-pool - Start completed.
+2022-05-30 11:09:06,670 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql:aws://db-onz-dev-2022.cmrfdf0pzgad.ap-northeast-2.rds.amazonaws.com:3306/plates?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true'
+2022-05-30 11:09:06,741 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-30 11:09:06,747 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-30 11:09:07,125 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-30 11:09:07,126 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 11:09:07,156 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-30 11:09:07,215 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-05-30 11:09:07,227 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 2 mappings in 'requestMappingHandlerMapping'
+2022-05-30 11:09:07,242 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-05-30 11:09:07,247 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-05-30 11:09:07,256 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-05-30 11:09:07,349 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@ab39880, org.springframework.security.web.context.SecurityContextPersistenceFilter@24b3bcce, org.springframework.security.web.header.HeaderWriterFilter@78bc99a2, org.springframework.security.web.csrf.CsrfFilter@1fabf610, org.springframework.security.web.authentication.logout.LogoutFilter@29e26bb9, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@38fe6369, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@317218c7, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@4c7337d7, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@630c6d71, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2bd77ea9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5dc2e207, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@41af1194, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@39ea5900, org.springframework.security.oauth2.client.web.OAuth2AuthorizationCodeGrantFilter@265258a9, org.springframework.security.web.session.SessionManagementFilter@6468dd25, org.springframework.security.web.access.ExceptionTranslationFilter@18dc2a9d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5618696d]
+2022-05-30 11:09:07,373 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-05-30 11:09:07,385 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-30 11:09:07,392 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started PlatesApplication in 1.712 seconds (JVM running for 5056.576)
+2022-05-30 11:09:07,398 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   OAuth2WebSecurityConfiguration.OAuth2SecurityFilterChainConfiguration matched:
+      - AllNestedConditions 2 matched 0 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter,org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) did not find any beans; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   WebSecurityEnablerConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2022-05-30 11:09:08,843 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-10] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 11:09:08,845 INFO com.zaxxer.hikari.HikariDataSource [Thread-10] jpa-hikari-pool - Shutdown initiated...
+2022-05-30 11:09:08,943 INFO com.zaxxer.hikari.HikariDataSource [Thread-10] jpa-hikari-pool - Shutdown completed.
+2022-05-30 11:09:09,154 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting PlatesApplication using Java 11.0.13 on Kang-YongHo-MacBookPro.local with PID 41364 (/Users/dlo/IdeaProjects/plates/target/classes started by dlo in /Users/dlo/IdeaProjects/plates)
+2022-05-30 11:09:09,157 INFO org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2022-05-30 11:09:09,386 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-30 11:09:09,421 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 34 ms. Found 3 JPA repository interfaces.
+2022-05-30 11:09:09,552 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-05-30 11:09:09,555 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-05-30 11:09:09,556 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-30 11:09:09,566 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-05-30 11:09:09,566 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 400 ms
+2022-05-30 11:09:09,575 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] jpa-hikari-pool - Starting...
+2022-05-30 11:09:09,740 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] jpa-hikari-pool - Start completed.
+2022-05-30 11:09:09,741 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql:aws://db-onz-dev-2022.cmrfdf0pzgad.ap-northeast-2.rds.amazonaws.com:3306/plates?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true'
+2022-05-30 11:09:09,771 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-30 11:09:09,775 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-30 11:09:10,134 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-30 11:09:10,135 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 11:09:10,287 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-30 11:09:10,366 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-05-30 11:09:10,462 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@664e04a5, org.springframework.security.web.context.SecurityContextPersistenceFilter@29b7a6ea, org.springframework.security.web.header.HeaderWriterFilter@10976bcf, org.springframework.web.filter.CorsFilter@54a3dede, org.springframework.security.web.authentication.logout.LogoutFilter@5294c200, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@3f2c0960, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@6bdc573d, com.demo.common.filter.JwtFilter@b1baa23, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@8976e5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2bebbc28, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@27771c2, org.springframework.security.web.session.SessionManagementFilter@3b1ac39a, org.springframework.security.web.access.ExceptionTranslationFilter@2d408aeb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@20d241ab]
+2022-05-30 11:09:10,476 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-05-30 11:09:10,490 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 24 mappings in 'requestMappingHandlerMapping'
+2022-05-30 11:09:10,502 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-05-30 11:09:10,516 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-05-30 11:09:10,570 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-05-30 11:09:10,584 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-30 11:09:10,589 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started PlatesApplication in 1.549 seconds (JVM running for 5059.773)
+2022-05-30 11:09:10,595 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   OAuth2WebSecurityConfiguration.OAuth2SecurityFilterChainConfiguration:
+      Did not match:
+         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter,org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter' securityConfig; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   WebSecurityEnablerConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) found beans named springSecurityFilterChain (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+         - found 'session' scope (OnWebApplicationCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2022-05-30 11:09:45,610 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-15] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 11:09:45,615 INFO com.zaxxer.hikari.HikariDataSource [Thread-15] jpa-hikari-pool - Shutdown initiated...
+2022-05-30 11:09:45,651 INFO com.zaxxer.hikari.HikariDataSource [Thread-15] jpa-hikari-pool - Shutdown completed.
+2022-05-30 11:09:45,917 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting PlatesApplication using Java 11.0.13 on Kang-YongHo-MacBookPro.local with PID 41364 (/Users/dlo/IdeaProjects/plates/target/classes started by dlo in /Users/dlo/IdeaProjects/plates)
+2022-05-30 11:09:45,923 INFO org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2022-05-30 11:09:46,127 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-30 11:09:46,130 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-05-30 11:09:46,250 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-05-30 11:09:46,253 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-05-30 11:09:46,254 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-30 11:09:46,265 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-05-30 11:09:46,265 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 331 ms
+2022-05-30 11:09:46,282 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] jpa-hikari-pool - Starting...
+2022-05-30 11:09:46,456 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] jpa-hikari-pool - Start completed.
+2022-05-30 11:09:46,457 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql:aws://db-onz-dev-2022.cmrfdf0pzgad.ap-northeast-2.rds.amazonaws.com:3306/plates?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true'
+2022-05-30 11:09:46,482 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-30 11:09:46,486 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-30 11:09:46,537 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-30 11:09:46,537 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 11:09:46,554 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-30 11:09:46,601 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-05-30 11:09:46,608 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 2 mappings in 'requestMappingHandlerMapping'
+2022-05-30 11:09:46,618 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-05-30 11:09:46,621 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-05-30 11:09:46,632 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-05-30 11:09:46,672 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@10b7335, org.springframework.security.web.context.SecurityContextPersistenceFilter@305e69b0, org.springframework.security.web.header.HeaderWriterFilter@2dd46e9, org.springframework.security.web.csrf.CsrfFilter@41d89f28, org.springframework.security.web.authentication.logout.LogoutFilter@61e71367, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@e4f1c6f, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@5e843112, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@457e138, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@12c33ff3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3a6e1c0d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1bd5723d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@73d785a0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@459da6f3, org.springframework.security.oauth2.client.web.OAuth2AuthorizationCodeGrantFilter@77d1a5c4, org.springframework.security.web.session.SessionManagementFilter@357a81e8, org.springframework.security.web.access.ExceptionTranslationFilter@6409f52b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@33a35bf5]
+2022-05-30 11:09:46,688 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-05-30 11:09:46,703 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-30 11:09:46,706 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started PlatesApplication in 0.931 seconds (JVM running for 5095.892)
+2022-05-30 11:09:46,709 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   OAuth2WebSecurityConfiguration.OAuth2SecurityFilterChainConfiguration matched:
+      - AllNestedConditions 2 matched 0 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter,org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) did not find any beans; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   WebSecurityEnablerConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2022-05-30 11:09:48,183 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-19] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 11:09:48,184 INFO com.zaxxer.hikari.HikariDataSource [Thread-19] jpa-hikari-pool - Shutdown initiated...
+2022-05-30 11:09:48,280 INFO com.zaxxer.hikari.HikariDataSource [Thread-19] jpa-hikari-pool - Shutdown completed.
+2022-05-30 11:09:48,493 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting PlatesApplication using Java 11.0.13 on Kang-YongHo-MacBookPro.local with PID 41364 (/Users/dlo/IdeaProjects/plates/target/classes started by dlo in /Users/dlo/IdeaProjects/plates)
+2022-05-30 11:09:48,495 INFO org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2022-05-30 11:09:48,752 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-30 11:09:48,807 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 54 ms. Found 3 JPA repository interfaces.
+2022-05-30 11:09:48,956 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-05-30 11:09:48,960 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-05-30 11:09:48,961 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-30 11:09:48,972 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-05-30 11:09:48,972 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 470 ms
+2022-05-30 11:09:48,991 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] jpa-hikari-pool - Starting...
+2022-05-30 11:09:49,153 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] jpa-hikari-pool - Start completed.
+2022-05-30 11:09:49,154 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql:aws://db-onz-dev-2022.cmrfdf0pzgad.ap-northeast-2.rds.amazonaws.com:3306/plates?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true'
+2022-05-30 11:09:49,185 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-30 11:09:49,191 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-30 11:09:49,539 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-30 11:09:49,540 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 11:09:49,697 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-30 11:09:49,789 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-05-30 11:09:49,856 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@d69ee73, org.springframework.security.web.context.SecurityContextPersistenceFilter@4a6fbb77, org.springframework.security.web.header.HeaderWriterFilter@470cdf28, org.springframework.web.filter.CorsFilter@178eb3fb, org.springframework.security.web.authentication.logout.LogoutFilter@19d33b1e, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@658b0755, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@170a6616, com.demo.common.filter.JwtFilter@2a82aff0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5560ee5f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@74349e44, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6e7c5660, org.springframework.security.web.session.SessionManagementFilter@7ac41f45, org.springframework.security.web.access.ExceptionTranslationFilter@13b19439, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@36f59114]
+2022-05-30 11:09:49,868 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-05-30 11:09:49,888 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 24 mappings in 'requestMappingHandlerMapping'
+2022-05-30 11:09:49,900 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-05-30 11:09:49,909 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-05-30 11:09:49,937 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-05-30 11:09:49,950 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-30 11:09:49,961 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started PlatesApplication in 1.581 seconds (JVM running for 5099.147)
+2022-05-30 11:09:49,963 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   OAuth2WebSecurityConfiguration.OAuth2SecurityFilterChainConfiguration:
+      Did not match:
+         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter,org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter' securityConfig; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   WebSecurityEnablerConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) found beans named springSecurityFilterChain (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+         - found 'session' scope (OnWebApplicationCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2022-05-30 11:11:19,478 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-23] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 11:11:19,485 INFO com.zaxxer.hikari.HikariDataSource [Thread-23] jpa-hikari-pool - Shutdown initiated...
+2022-05-30 11:11:19,561 INFO com.zaxxer.hikari.HikariDataSource [Thread-23] jpa-hikari-pool - Shutdown completed.
+2022-05-30 11:11:19,974 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting PlatesApplication using Java 11.0.13 on Kang-YongHo-MacBookPro.local with PID 41364 (/Users/dlo/IdeaProjects/plates/target/classes started by dlo in /Users/dlo/IdeaProjects/plates)
+2022-05-30 11:11:19,978 INFO org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2022-05-30 11:11:20,225 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-30 11:11:20,276 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 49 ms. Found 3 JPA repository interfaces.
+2022-05-30 11:11:20,434 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-05-30 11:11:20,437 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-05-30 11:11:20,437 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-30 11:11:20,446 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-05-30 11:11:20,446 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 460 ms
+2022-05-30 11:11:20,456 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] jpa-hikari-pool - Starting...
+2022-05-30 11:11:20,599 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] jpa-hikari-pool - Start completed.
+2022-05-30 11:11:20,601 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql:aws://db-onz-dev-2022.cmrfdf0pzgad.ap-northeast-2.rds.amazonaws.com:3306/plates?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true'
+2022-05-30 11:11:20,630 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-30 11:11:20,639 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-30 11:11:20,942 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-30 11:11:20,943 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 11:11:21,085 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-30 11:11:21,140 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-05-30 11:11:21,188 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@8b148d0, org.springframework.security.web.context.SecurityContextPersistenceFilter@6188ee26, org.springframework.security.web.header.HeaderWriterFilter@725e58de, org.springframework.web.filter.CorsFilter@679f9c12, org.springframework.security.web.authentication.logout.LogoutFilter@78746507, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@77aea0c7, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@74637943, com.demo.common.filter.JwtFilter@6535b0be, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4fcbf9a0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4fd3c02f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@af3643a, org.springframework.security.web.session.SessionManagementFilter@1b214916, org.springframework.security.web.access.ExceptionTranslationFilter@559f6e51, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@77630450]
+2022-05-30 11:11:21,197 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-05-30 11:11:21,209 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 24 mappings in 'requestMappingHandlerMapping'
+2022-05-30 11:11:21,217 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-05-30 11:11:21,224 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-05-30 11:11:21,246 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-05-30 11:11:21,259 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-30 11:11:21,263 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started PlatesApplication in 1.462 seconds (JVM running for 5190.454)
+2022-05-30 11:11:21,265 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2022-05-30 11:11:22,712 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-27] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 11:11:22,718 INFO com.zaxxer.hikari.HikariDataSource [Thread-27] jpa-hikari-pool - Shutdown initiated...
+2022-05-30 11:11:22,792 INFO com.zaxxer.hikari.HikariDataSource [Thread-27] jpa-hikari-pool - Shutdown completed.
+2022-05-30 11:11:23,133 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting PlatesApplication using Java 11.0.13 on Kang-YongHo-MacBookPro.local with PID 41364 (/Users/dlo/IdeaProjects/plates/target/classes started by dlo in /Users/dlo/IdeaProjects/plates)
+2022-05-30 11:11:23,136 INFO org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2022-05-30 11:11:23,433 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-30 11:11:23,483 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 48 ms. Found 3 JPA repository interfaces.
+2022-05-30 11:11:23,665 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-05-30 11:11:23,669 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-05-30 11:11:23,669 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-30 11:11:23,679 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-05-30 11:11:23,680 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 533 ms
+2022-05-30 11:11:23,691 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] jpa-hikari-pool - Starting...
+2022-05-30 11:11:23,860 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] jpa-hikari-pool - Start completed.
+2022-05-30 11:11:23,861 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql:aws://db-onz-dev-2022.cmrfdf0pzgad.ap-northeast-2.rds.amazonaws.com:3306/plates?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true'
+2022-05-30 11:11:23,886 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-30 11:11:23,891 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-30 11:11:24,195 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-30 11:11:24,196 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 11:11:24,331 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-30 11:11:24,390 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-05-30 11:11:24,442 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5dd5b66, org.springframework.security.web.context.SecurityContextPersistenceFilter@146e501a, org.springframework.security.web.header.HeaderWriterFilter@6307c2d0, org.springframework.web.filter.CorsFilter@7f731447, org.springframework.security.web.authentication.logout.LogoutFilter@133fce99, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@5dc5e9d5, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@1497f5b2, com.demo.common.filter.JwtFilter@d8ad13d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d733015, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@20bf6c29, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@261b8f5b, org.springframework.security.web.session.SessionManagementFilter@5d810b80, org.springframework.security.web.access.ExceptionTranslationFilter@6cc0b694, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1e4c9301]
+2022-05-30 11:11:24,454 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-05-30 11:11:24,465 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 24 mappings in 'requestMappingHandlerMapping'
+2022-05-30 11:11:24,473 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-05-30 11:11:24,480 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-05-30 11:11:24,500 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-05-30 11:11:24,512 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-30 11:11:24,515 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started PlatesApplication in 1.576 seconds (JVM running for 5193.706)
+2022-05-30 11:11:24,516 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2022-05-30 11:13:28,736 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-31] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 11:13:28,739 INFO com.zaxxer.hikari.HikariDataSource [Thread-31] jpa-hikari-pool - Shutdown initiated...
+2022-05-30 11:13:28,827 INFO com.zaxxer.hikari.HikariDataSource [Thread-31] jpa-hikari-pool - Shutdown completed.
+2022-05-30 11:13:29,201 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting PlatesApplication using Java 11.0.13 on Kang-YongHo-MacBookPro.local with PID 41364 (/Users/dlo/IdeaProjects/plates/target/classes started by dlo in /Users/dlo/IdeaProjects/plates)
+2022-05-30 11:13:29,205 INFO org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2022-05-30 11:13:29,389 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-30 11:13:29,392 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-05-30 11:13:29,504 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-05-30 11:13:29,510 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-05-30 11:13:29,511 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-30 11:13:29,526 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-05-30 11:13:29,527 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 314 ms
+2022-05-30 11:13:29,538 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] jpa-hikari-pool - Starting...
+2022-05-30 11:13:29,702 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] jpa-hikari-pool - Start completed.
+2022-05-30 11:13:29,704 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql:aws://db-onz-dev-2022.cmrfdf0pzgad.ap-northeast-2.rds.amazonaws.com:3306/plates?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true'
+2022-05-30 11:13:29,795 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-30 11:13:29,802 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-30 11:13:30,136 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-30 11:13:30,136 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 11:13:30,151 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-30 11:13:30,192 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-05-30 11:13:30,200 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 2 mappings in 'requestMappingHandlerMapping'
+2022-05-30 11:13:30,209 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-05-30 11:13:30,212 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-05-30 11:13:30,218 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-05-30 11:13:30,254 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5d0a92cc, org.springframework.security.web.context.SecurityContextPersistenceFilter@13221e84, org.springframework.security.web.header.HeaderWriterFilter@10bb0ad7, org.springframework.security.web.csrf.CsrfFilter@829ca19, org.springframework.security.web.authentication.logout.LogoutFilter@66524959, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@567dda6c, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@a45c315, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@75a049b8, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@430d5606, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2a10ed5c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@35f26bc4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7dd7321f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@e69de60, org.springframework.security.oauth2.client.web.OAuth2AuthorizationCodeGrantFilter@659c9aa9, org.springframework.security.web.session.SessionManagementFilter@551d7f3c, org.springframework.security.web.access.ExceptionTranslationFilter@5bbfb935, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7ac2be9a]
+2022-05-30 11:13:30,264 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-05-30 11:13:30,275 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-30 11:13:30,279 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started PlatesApplication in 1.235 seconds (JVM running for 5319.476)
+2022-05-30 11:13:30,280 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   OAuth2WebSecurityConfiguration.OAuth2SecurityFilterChainConfiguration matched:
+      - AllNestedConditions 2 matched 0 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter,org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) did not find any beans; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   WebSecurityEnablerConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2022-05-30 11:13:31,724 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-35] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 11:13:31,732 INFO com.zaxxer.hikari.HikariDataSource [Thread-35] jpa-hikari-pool - Shutdown initiated...
+2022-05-30 11:13:31,858 INFO com.zaxxer.hikari.HikariDataSource [Thread-35] jpa-hikari-pool - Shutdown completed.
+2022-05-30 11:13:32,250 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting PlatesApplication using Java 11.0.13 on Kang-YongHo-MacBookPro.local with PID 41364 (/Users/dlo/IdeaProjects/plates/target/classes started by dlo in /Users/dlo/IdeaProjects/plates)
+2022-05-30 11:13:32,256 INFO org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2022-05-30 11:13:32,674 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-30 11:13:32,741 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 65 ms. Found 3 JPA repository interfaces.
+2022-05-30 11:13:32,920 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-05-30 11:13:32,924 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-05-30 11:13:32,924 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-30 11:13:32,934 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-05-30 11:13:32,935 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 670 ms
+2022-05-30 11:13:32,947 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] jpa-hikari-pool - Starting...
+2022-05-30 11:13:33,146 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] jpa-hikari-pool - Start completed.
+2022-05-30 11:13:33,147 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql:aws://db-onz-dev-2022.cmrfdf0pzgad.ap-northeast-2.rds.amazonaws.com:3306/plates?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true'
+2022-05-30 11:13:33,182 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-30 11:13:33,189 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-30 11:13:33,491 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-30 11:13:33,493 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 11:13:34,194 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-30 11:13:34,344 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-05-30 11:13:34,448 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2e7a7ff9, org.springframework.security.web.context.SecurityContextPersistenceFilter@664c8d1e, org.springframework.security.web.header.HeaderWriterFilter@2336840b, org.springframework.web.filter.CorsFilter@49f3f7d0, org.springframework.security.web.authentication.logout.LogoutFilter@17a2a63f, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@7e0827c5, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@787a1c44, com.demo.common.filter.JwtFilter@76fad724, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1b4c1a8b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@ccdd335, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5eca6d83, org.springframework.security.web.session.SessionManagementFilter@55e9973f, org.springframework.security.web.access.ExceptionTranslationFilter@1ccc262a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7132db95]
+2022-05-30 11:13:34,468 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-05-30 11:13:34,511 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 24 mappings in 'requestMappingHandlerMapping'
+2022-05-30 11:13:34,526 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-05-30 11:13:34,539 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-05-30 11:13:34,568 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-05-30 11:13:34,594 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-30 11:13:34,603 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started PlatesApplication in 2.55 seconds (JVM running for 5323.8)
+2022-05-30 11:13:34,605 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   OAuth2WebSecurityConfiguration.OAuth2SecurityFilterChainConfiguration:
+      Did not match:
+         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter,org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter' securityConfig; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   WebSecurityEnablerConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) found beans named springSecurityFilterChain (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+         - found 'session' scope (OnWebApplicationCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2022-05-30 13:23:19,904 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-40] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 13:23:19,910 INFO com.zaxxer.hikari.HikariDataSource [Thread-40] jpa-hikari-pool - Shutdown initiated...
+2022-05-30 13:23:19,924 INFO com.zaxxer.hikari.HikariDataSource [Thread-40] jpa-hikari-pool - Shutdown completed.
+2022-05-30 13:23:20,291 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting PlatesApplication using Java 11.0.13 on Kang-YongHo-MacBookPro.local with PID 41364 (/Users/dlo/IdeaProjects/plates/target/classes started by dlo in /Users/dlo/IdeaProjects/plates)
+2022-05-30 13:23:20,300 INFO org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2022-05-30 13:23:20,530 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-30 13:23:20,531 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2022-05-30 13:23:20,672 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-05-30 13:23:20,677 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-05-30 13:23:20,677 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-30 13:23:20,692 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-05-30 13:23:20,694 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 381 ms
+2022-05-30 13:23:20,705 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] jpa-hikari-pool - Starting...
+2022-05-30 13:23:20,888 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] jpa-hikari-pool - Start completed.
+2022-05-30 13:23:20,888 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql:aws://db-onz-dev-2022.cmrfdf0pzgad.ap-northeast-2.rds.amazonaws.com:3306/plates?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true'
+2022-05-30 13:23:20,917 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-30 13:23:20,927 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-30 13:23:20,992 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-30 13:23:20,996 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 13:23:21,019 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-30 13:23:21,063 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-05-30 13:23:21,075 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 2 mappings in 'requestMappingHandlerMapping'
+2022-05-30 13:23:21,088 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-05-30 13:23:21,092 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-05-30 13:23:21,104 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-05-30 13:23:21,153 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@56c73d4c, org.springframework.security.web.context.SecurityContextPersistenceFilter@1ac7e05a, org.springframework.security.web.header.HeaderWriterFilter@78671902, org.springframework.security.web.csrf.CsrfFilter@4f9b6f0f, org.springframework.security.web.authentication.logout.LogoutFilter@6c3e16bd, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@68603866, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@d0dbe59, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@778cecbf, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@748615d3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@46beda3f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a7b02f4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a14a3b0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@26a15bc7, org.springframework.security.oauth2.client.web.OAuth2AuthorizationCodeGrantFilter@3f0d81c3, org.springframework.security.web.session.SessionManagementFilter@eb01594, org.springframework.security.web.access.ExceptionTranslationFilter@1b4351b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2b132427]
+2022-05-30 13:23:21,164 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-05-30 13:23:21,178 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-30 13:23:21,184 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started PlatesApplication in 1.053 seconds (JVM running for 13110.051)
+2022-05-30 13:23:21,185 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   OAuth2WebSecurityConfiguration.OAuth2SecurityFilterChainConfiguration matched:
+      - AllNestedConditions 2 matched 0 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter,org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) did not find any beans; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   WebSecurityEnablerConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2022-05-30 13:23:22,651 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-48] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 13:23:22,655 INFO com.zaxxer.hikari.HikariDataSource [Thread-48] jpa-hikari-pool - Shutdown initiated...
+2022-05-30 13:23:22,725 INFO com.zaxxer.hikari.HikariDataSource [Thread-48] jpa-hikari-pool - Shutdown completed.
+2022-05-30 13:23:23,008 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting PlatesApplication using Java 11.0.13 on Kang-YongHo-MacBookPro.local with PID 41364 (/Users/dlo/IdeaProjects/plates/target/classes started by dlo in /Users/dlo/IdeaProjects/plates)
+2022-05-30 13:23:23,012 INFO org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2022-05-30 13:23:23,217 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-30 13:23:23,256 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 38 ms. Found 3 JPA repository interfaces.
+2022-05-30 13:23:23,379 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-05-30 13:23:23,383 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-05-30 13:23:23,384 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-30 13:23:23,393 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-05-30 13:23:23,393 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 374 ms
+2022-05-30 13:23:23,402 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] jpa-hikari-pool - Starting...
+2022-05-30 13:23:25,452 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] jpa-hikari-pool - Start completed.
+2022-05-30 13:23:25,457 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql:aws://db-onz-dev-2022.cmrfdf0pzgad.ap-northeast-2.rds.amazonaws.com:3306/plates?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true'
+2022-05-30 13:23:25,508 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-30 13:23:25,515 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-30 13:23:25,853 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-30 13:23:25,854 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 13:23:25,993 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-30 13:23:26,060 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-05-30 13:23:26,130 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@a680af5, org.springframework.security.web.context.SecurityContextPersistenceFilter@3d6f3f64, org.springframework.security.web.header.HeaderWriterFilter@bb1e2d5, org.springframework.web.filter.CorsFilter@2cc12f1d, org.springframework.security.web.authentication.logout.LogoutFilter@31e0f0ff, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@58702fb, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@512dc6f1, com.demo.common.filter.JwtFilter@11ec70a4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@15adfece, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@110e01e4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2ec92626, org.springframework.security.web.session.SessionManagementFilter@2778745b, org.springframework.security.web.access.ExceptionTranslationFilter@77cbe43b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1cd74b1e]
+2022-05-30 13:23:26,141 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-05-30 13:23:26,152 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 24 mappings in 'requestMappingHandlerMapping'
+2022-05-30 13:23:26,159 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-05-30 13:23:26,166 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-05-30 13:23:26,185 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-05-30 13:23:26,196 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-30 13:23:26,200 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started PlatesApplication in 3.325 seconds (JVM running for 13115.067)
+2022-05-30 13:23:26,201 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   OAuth2WebSecurityConfiguration.OAuth2SecurityFilterChainConfiguration:
+      Did not match:
+         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter,org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter' securityConfig; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   WebSecurityEnablerConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) found beans named springSecurityFilterChain (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+         - found 'session' scope (OnWebApplicationCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2022-05-30 13:24:20,528 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-53] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 13:24:20,534 INFO com.zaxxer.hikari.HikariDataSource [Thread-53] jpa-hikari-pool - Shutdown initiated...
+2022-05-30 13:24:20,579 INFO com.zaxxer.hikari.HikariDataSource [Thread-53] jpa-hikari-pool - Shutdown completed.
+2022-05-30 13:24:20,904 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting PlatesApplication using Java 11.0.13 on Kang-YongHo-MacBookPro.local with PID 41364 (/Users/dlo/IdeaProjects/plates/target/classes started by dlo in /Users/dlo/IdeaProjects/plates)
+2022-05-30 13:24:20,913 INFO org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2022-05-30 13:24:21,095 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-30 13:24:21,096 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2022-05-30 13:24:21,211 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-05-30 13:24:21,216 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-05-30 13:24:21,216 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-30 13:24:21,227 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-05-30 13:24:21,227 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 302 ms
+2022-05-30 13:24:21,243 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] jpa-hikari-pool - Starting...
+2022-05-30 13:24:21,431 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] jpa-hikari-pool - Start completed.
+2022-05-30 13:24:21,432 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql:aws://db-onz-dev-2022.cmrfdf0pzgad.ap-northeast-2.rds.amazonaws.com:3306/plates?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true'
+2022-05-30 13:24:21,491 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-30 13:24:21,502 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-30 13:24:21,820 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-30 13:24:21,821 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 13:24:21,837 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-30 13:24:21,869 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-05-30 13:24:21,881 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 2 mappings in 'requestMappingHandlerMapping'
+2022-05-30 13:24:21,901 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-05-30 13:24:21,905 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-05-30 13:24:21,911 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-05-30 13:24:21,949 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@76e42c6, org.springframework.security.web.context.SecurityContextPersistenceFilter@597dc4ff, org.springframework.security.web.header.HeaderWriterFilter@154ae882, org.springframework.security.web.csrf.CsrfFilter@6e34bd4e, org.springframework.security.web.authentication.logout.LogoutFilter@4feac290, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@338d92b5, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@ac16bc1, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@7c69315b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2b2423e9, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@32b85899, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3dfdd1a6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7fb13063, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3326b26c, org.springframework.security.oauth2.client.web.OAuth2AuthorizationCodeGrantFilter@58297b4c, org.springframework.security.web.session.SessionManagementFilter@1268c531, org.springframework.security.web.access.ExceptionTranslationFilter@44b41a0c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7ce5dbfe]
+2022-05-30 13:24:21,959 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-05-30 13:24:21,974 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-30 13:24:21,978 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started PlatesApplication in 1.249 seconds (JVM running for 13170.846)
+2022-05-30 13:24:21,980 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   OAuth2WebSecurityConfiguration.OAuth2SecurityFilterChainConfiguration matched:
+      - AllNestedConditions 2 matched 0 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter,org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) did not find any beans; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   WebSecurityEnablerConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2022-05-30 13:24:23,445 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-57] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 13:24:23,450 INFO com.zaxxer.hikari.HikariDataSource [Thread-57] jpa-hikari-pool - Shutdown initiated...
+2022-05-30 13:24:23,511 INFO com.zaxxer.hikari.HikariDataSource [Thread-57] jpa-hikari-pool - Shutdown completed.
+2022-05-30 13:24:23,731 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting PlatesApplication using Java 11.0.13 on Kang-YongHo-MacBookPro.local with PID 41364 (/Users/dlo/IdeaProjects/plates/target/classes started by dlo in /Users/dlo/IdeaProjects/plates)
+2022-05-30 13:24:23,735 INFO org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2022-05-30 13:24:23,925 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-30 13:24:23,962 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 35 ms. Found 3 JPA repository interfaces.
+2022-05-30 13:24:24,070 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-05-30 13:24:24,074 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-05-30 13:24:24,074 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-30 13:24:24,084 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-05-30 13:24:24,084 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 342 ms
+2022-05-30 13:24:24,092 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] jpa-hikari-pool - Starting...
+2022-05-30 13:24:24,265 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] jpa-hikari-pool - Start completed.
+2022-05-30 13:24:24,267 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql:aws://db-onz-dev-2022.cmrfdf0pzgad.ap-northeast-2.rds.amazonaws.com:3306/plates?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true'
+2022-05-30 13:24:24,300 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-30 13:24:24,306 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-30 13:24:24,581 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-30 13:24:24,582 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 13:24:24,726 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-30 13:24:24,791 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-05-30 13:24:24,868 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@ae1c8bb, org.springframework.security.web.context.SecurityContextPersistenceFilter@7353222c, org.springframework.security.web.header.HeaderWriterFilter@6515106b, org.springframework.web.filter.CorsFilter@3af641b, org.springframework.security.web.authentication.logout.LogoutFilter@20c32586, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@1cc2d3b4, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@4f71f567, com.demo.common.filter.JwtFilter@97a58a9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2739b2ed, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6ae26829, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@49604e2c, org.springframework.security.web.session.SessionManagementFilter@43ac70a0, org.springframework.security.web.access.ExceptionTranslationFilter@23fef80b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3717ca06]
+2022-05-30 13:24:24,879 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-05-30 13:24:24,892 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 24 mappings in 'requestMappingHandlerMapping'
+2022-05-30 13:24:24,902 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-05-30 13:24:24,912 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-05-30 13:24:24,938 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-05-30 13:24:24,955 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-30 13:24:24,960 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started PlatesApplication in 1.338 seconds (JVM running for 13173.828)
+2022-05-30 13:24:24,962 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   OAuth2WebSecurityConfiguration.OAuth2SecurityFilterChainConfiguration:
+      Did not match:
+         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter,org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter' securityConfig; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   WebSecurityEnablerConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) found beans named springSecurityFilterChain (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+         - found 'session' scope (OnWebApplicationCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2022-05-30 13:26:28,221 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-61] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 13:26:28,227 INFO com.zaxxer.hikari.HikariDataSource [Thread-61] jpa-hikari-pool - Shutdown initiated...
+2022-05-30 13:26:28,324 INFO com.zaxxer.hikari.HikariDataSource [Thread-61] jpa-hikari-pool - Shutdown completed.
+2022-05-30 13:26:28,887 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting PlatesApplication using Java 11.0.13 on Kang-YongHo-MacBookPro.local with PID 41364 (/Users/dlo/IdeaProjects/plates/target/classes started by dlo in /Users/dlo/IdeaProjects/plates)
+2022-05-30 13:26:28,891 INFO org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2022-05-30 13:26:29,167 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-30 13:26:29,208 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 40 ms. Found 3 JPA repository interfaces.
+2022-05-30 13:26:29,366 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-05-30 13:26:29,371 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-05-30 13:26:29,371 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-30 13:26:29,387 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-05-30 13:26:29,387 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 488 ms
+2022-05-30 13:26:29,397 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] jpa-hikari-pool - Starting...
+2022-05-30 13:26:29,543 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] jpa-hikari-pool - Start completed.
+2022-05-30 13:26:29,545 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql:aws://db-onz-dev-2022.cmrfdf0pzgad.ap-northeast-2.rds.amazonaws.com:3306/plates?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true'
+2022-05-30 13:26:29,575 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-30 13:26:29,581 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-30 13:26:29,994 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-30 13:26:29,994 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 13:26:30,159 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-30 13:26:30,234 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-05-30 13:26:30,293 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@155ddbd2, org.springframework.security.web.context.SecurityContextPersistenceFilter@2284c9cc, org.springframework.security.web.header.HeaderWriterFilter@3a56f2a1, org.springframework.web.filter.CorsFilter@79acfa46, org.springframework.security.web.authentication.logout.LogoutFilter@4b044bb6, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@780aac41, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@3ede8660, com.demo.common.filter.JwtFilter@54692996, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3292efd6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3f5cd0df, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1ece48fd, org.springframework.security.web.session.SessionManagementFilter@43e6600e, org.springframework.security.web.access.ExceptionTranslationFilter@3aa5546e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5ad3601]
+2022-05-30 13:26:30,302 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-05-30 13:26:30,317 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 24 mappings in 'requestMappingHandlerMapping'
+2022-05-30 13:26:30,328 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-05-30 13:26:30,336 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-05-30 13:26:30,362 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-05-30 13:26:30,381 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-30 13:26:30,386 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started PlatesApplication in 1.735 seconds (JVM running for 13299.255)
+2022-05-30 13:26:30,387 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2022-05-30 13:26:31,811 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-65] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 13:26:31,819 INFO com.zaxxer.hikari.HikariDataSource [Thread-65] jpa-hikari-pool - Shutdown initiated...
+2022-05-30 13:26:31,949 INFO com.zaxxer.hikari.HikariDataSource [Thread-65] jpa-hikari-pool - Shutdown completed.
+2022-05-30 13:26:32,353 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting PlatesApplication using Java 11.0.13 on Kang-YongHo-MacBookPro.local with PID 41364 (/Users/dlo/IdeaProjects/plates/target/classes started by dlo in /Users/dlo/IdeaProjects/plates)
+2022-05-30 13:26:32,358 INFO org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2022-05-30 13:26:32,609 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-30 13:26:32,656 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 46 ms. Found 3 JPA repository interfaces.
+2022-05-30 13:26:32,803 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-05-30 13:26:32,812 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-05-30 13:26:32,812 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-30 13:26:32,834 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-05-30 13:26:32,835 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 466 ms
+2022-05-30 13:26:32,845 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] jpa-hikari-pool - Starting...
+2022-05-30 13:26:32,997 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] jpa-hikari-pool - Start completed.
+2022-05-30 13:26:32,998 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql:aws://db-onz-dev-2022.cmrfdf0pzgad.ap-northeast-2.rds.amazonaws.com:3306/plates?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true'
+2022-05-30 13:26:33,023 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-30 13:26:33,029 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-30 13:26:33,355 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-30 13:26:33,356 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 13:26:33,459 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-30 13:26:33,526 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-05-30 13:26:33,585 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6c9a863, org.springframework.security.web.context.SecurityContextPersistenceFilter@14d99f1e, org.springframework.security.web.header.HeaderWriterFilter@40aa0201, org.springframework.web.filter.CorsFilter@7811f524, org.springframework.security.web.authentication.logout.LogoutFilter@4ace8f1f, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@66edf694, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@6bff9f1e, com.demo.common.filter.JwtFilter@71c1f5e4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a0f3e4b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a259301, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@66d183ad, org.springframework.security.web.session.SessionManagementFilter@4b5475d8, org.springframework.security.web.access.ExceptionTranslationFilter@6b32a345, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3039c3f5]
+2022-05-30 13:26:33,594 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-05-30 13:26:33,604 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 24 mappings in 'requestMappingHandlerMapping'
+2022-05-30 13:26:33,614 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-05-30 13:26:33,621 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-05-30 13:26:33,639 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-05-30 13:26:33,651 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-30 13:26:33,655 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started PlatesApplication in 1.49 seconds (JVM running for 13302.523)
+2022-05-30 13:26:33,655 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2022-05-30 13:27:27,080 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-69] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 13:27:27,087 INFO com.zaxxer.hikari.HikariDataSource [Thread-69] jpa-hikari-pool - Shutdown initiated...
+2022-05-30 13:27:27,095 INFO com.zaxxer.hikari.HikariDataSource [Thread-69] jpa-hikari-pool - Shutdown completed.
+2022-05-30 13:27:27,472 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting PlatesApplication using Java 11.0.13 on Kang-YongHo-MacBookPro.local with PID 41364 (/Users/dlo/IdeaProjects/plates/target/classes started by dlo in /Users/dlo/IdeaProjects/plates)
+2022-05-30 13:27:27,476 INFO org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2022-05-30 13:27:27,732 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-30 13:27:27,771 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 37 ms. Found 3 JPA repository interfaces.
+2022-05-30 13:27:27,920 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-05-30 13:27:27,925 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-05-30 13:27:27,925 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-30 13:27:27,936 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-05-30 13:27:27,936 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 447 ms
+2022-05-30 13:27:27,946 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] jpa-hikari-pool - Starting...
+2022-05-30 13:27:28,142 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] jpa-hikari-pool - Start completed.
+2022-05-30 13:27:28,144 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql:aws://db-onz-dev-2022.cmrfdf0pzgad.ap-northeast-2.rds.amazonaws.com:3306/plates?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true'
+2022-05-30 13:27:28,174 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-30 13:27:28,181 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-30 13:27:28,481 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-30 13:27:28,482 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 13:27:28,619 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-30 13:27:28,682 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-05-30 13:27:28,699 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accountController' defined in file [/Users/dlo/IdeaProjects/plates/target/classes/com/demo/modules/account/web/AccountController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.demo.modules.account.application.AccountService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-05-30 13:27:28,699 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 13:27:28,700 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] jpa-hikari-pool - Shutdown initiated...
+2022-05-30 13:27:28,950 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] jpa-hikari-pool - Shutdown completed.
+2022-05-30 13:27:28,955 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2022-05-30 13:27:28,987 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-30 13:27:29,008 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.demo.modules.account.web.AccountController required a bean of type 'com.demo.modules.account.application.AccountService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.demo.modules.account.application.AccountService' in your configuration.
+
+2022-05-30 13:27:30,463 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting PlatesApplication using Java 11.0.13 on Kang-YongHo-MacBookPro.local with PID 41364 (/Users/dlo/IdeaProjects/plates/target/classes started by dlo in /Users/dlo/IdeaProjects/plates)
+2022-05-30 13:27:30,464 INFO org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2022-05-30 13:27:30,626 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-30 13:27:30,657 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 30 ms. Found 3 JPA repository interfaces.
+2022-05-30 13:27:30,744 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-05-30 13:27:30,745 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-05-30 13:27:30,745 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-30 13:27:30,754 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-05-30 13:27:30,754 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 289 ms
+2022-05-30 13:27:30,766 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] jpa-hikari-pool - Starting...
+2022-05-30 13:27:30,889 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] jpa-hikari-pool - Start completed.
+2022-05-30 13:27:30,890 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:mysql:aws://db-onz-dev-2022.cmrfdf0pzgad.ap-northeast-2.rds.amazonaws.com:3306/plates?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true'
+2022-05-30 13:27:30,916 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-30 13:27:30,920 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-30 13:27:31,135 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-30 13:27:31,136 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 13:27:31,219 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-30 13:27:31,288 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-05-30 13:27:31,336 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@361e13b, org.springframework.security.web.context.SecurityContextPersistenceFilter@41077af0, org.springframework.security.web.header.HeaderWriterFilter@1de1d5b4, org.springframework.web.filter.CorsFilter@558d58c0, org.springframework.security.web.authentication.logout.LogoutFilter@407f7f4f, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@194df9bd, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@5d4418d5, com.demo.common.filter.JwtFilter@23fbd3dd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6f9f48d9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7cc07ceb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5e04e5c7, org.springframework.security.web.session.SessionManagementFilter@7ac7828e, org.springframework.security.web.access.ExceptionTranslationFilter@1b96b415, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@47222314]
+2022-05-30 13:27:31,345 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-05-30 13:27:31,358 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 24 mappings in 'requestMappingHandlerMapping'
+2022-05-30 13:27:31,366 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-05-30 13:27:31,373 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-05-30 13:27:31,392 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-05-30 13:27:31,404 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-30 13:27:31,408 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started PlatesApplication in 0.977 seconds (JVM running for 13360.277)
+2022-05-30 13:27:31,410 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2022-05-30 13:27:40,061 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-30 13:27:40,065 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] jpa-hikari-pool - Shutdown initiated...
+2022-05-30 13:27:40,071 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] jpa-hikari-pool - Shutdown completed.
