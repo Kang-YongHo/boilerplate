@@ -64,12 +64,12 @@ parse_params "$@"
 setup_colors
 
 msg "================================================================================="
-msg "DEPLOY ONZ BACK-END API SERVER"
+msg "DEPLOY boilerplate BACK-END API SERVER"
 
 msg "\nScript executed from :"
 pwd
 
-COUNT=$(docker images "onz-be:${now}*" | wc -l)
+COUNT=$(docker images "boilerplate-be:${now}*" | wc -l)
 VERSION_NUMBER="${now}-${COUNT//[[:space:]]/}"
 
 echo ${VERSION_NUMBER}
@@ -80,21 +80,21 @@ if ! [ "${maven_package}" ]; then
 fi
 msg "${GREEN}maven package success${NOFORMAT}"
 
-docker_build=$(time docker build -t onz-be:${VERSION_NUMBER} .)
+docker_build=$(time docker build -t boilerplate-be:${VERSION_NUMBER} .)
 #if ! [ "${docker_build}" ]; then
 #    die "Docker image build fail. ${YELLOW}check Dockerfile or Docker images${NOFORMAT}"
 #fi
 msg "${GREEN}Docker image build success${NOFORMAT}"
 
-msg "docker rm onz-be old version"
-docker rm --force onz-be
+msg "docker rm boilerplate-be old version"
+docker rm --force boilerplate-be
 
 msg "docker run"
-docker_run=$(docker run -e "SPRING_PROFILES_ACTIVE=dev" -d -p 8080:8080 --name onz-be onz-be:${VERSION_NUMBER})
+docker_run=$(docker run -e "SPRING_PROFILES_ACTIVE=dev" -d -p 8080:8080 --name boilerplate-be boilerplate-be:${VERSION_NUMBER})
 if ! [ "${docker_run}" ]; then
   die "Docker Run FAILED"
 fi
 msg "${GREEN}Docker container run success${NOFORMAT}"
 
-msg "ONZ BACK-END SERVER TAG : ${VERSION_NUMBER}"
+msg "boilerplate BACK-END SERVER TAG : ${VERSION_NUMBER}"
 msg "================================================================================="

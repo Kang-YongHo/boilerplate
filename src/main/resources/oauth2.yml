@@ -10,16 +10,16 @@ spring:
             user-name-attribute: id
         registration:
           kakao:
-            client-id: 4e1981af5af686d4f28dd7f5443cf947
-            client-secret: OOSIwzBEOPsMjq6t63hYE9CvZonuIN13
+            client-id: [client-id]
+            client-secret: [client-secret]
             scope: profile_nickname, profile_image, account_email
             redirect-uri: "{baseUrl}/{action}/oauth2/code/{registrationId}"
             authorization-grant-type: authorization_code
             client-name: kakao
             client-authentication-method: POST
           google:
-            clientId: 422154027862-05h1s3du9i3nnhjlhb9dsve90oo59guq.apps.googleusercontent.com
-            clientSecret: t3L7sU7YfZLEM487pZxNRNEv
+            clientId: [clientId]
+            clientSecret: [clientSecret]
             scope:
               - email
               - profile
