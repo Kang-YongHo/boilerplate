@@ -22,7 +22,7 @@ import java.util.Date;
 @RequiredArgsConstructor
 public class JwtProvider {
 
-    @Value("${onz.jwt.secret}")
+    @Value("${plate.jwt.secret}")
     private String secretKey;
 
     private final UserDetailServiceImpl userDetailService;

@@ -11,6 +11,7 @@ import com.demo.config.security.oauth2.HttpCookieOAuth2AuthorizationRequestRepos
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -48,7 +49,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             .and()
             .authorizeRequests()
             .requestMatchers(CorsUtils::isPreFlightRequest).permitAll()
-            .antMatchers("/login").not().fullyAuthenticated()
+            .antMatchers(HttpMethod.POST, "/login", "/api/accounts").not().fullyAuthenticated()
             .antMatchers("/auth/**").permitAll()
             .anyRequest().authenticated();
 

@@ -1,11 +1,8 @@
 package com.demo.modules.account.web;
 
-import static org.mockito.ArgumentMatchers.anyLong;
-
 import com.demo.config.security.UserDetailServiceImpl;
 import com.demo.modules.account.application.AccountService;
 import com.demo.modules.account.domain.Account;
-import com.demo.modules.account.type.Role;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContext;
@@ -24,7 +21,6 @@ public class WithAccountSecurityContextFactory implements WithSecurityContextFac
     public SecurityContext createSecurityContext(WithAccount annotation) {
         String name = annotation.value();
         Account account = new Account();
-        account.setId(anyLong());
         account.setName(name);
         account.setEmail(name + "@test.com");
         account.setPassword("test");

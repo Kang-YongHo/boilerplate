@@ -3,6 +3,8 @@ package com.demo.modules.organization.domain;
 import com.demo.modules.account.domain.Account;
 import com.demo.modules.common.domain.Address;
 import com.demo.modules.common.domain.BaseEntity;
+import com.demo.modules.common.type.YN;
+import java.time.ZonedDateTime;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -23,8 +25,6 @@ public class Organization extends BaseEntity {
     private String name;
     @Embedded
     private Address address;
-    private String lat;
-    private String lng;
     private int totalMemberCount;
     private int currentMemberCount;
 
@@ -32,8 +32,22 @@ public class Organization extends BaseEntity {
     @OrderBy("createdAt")
     private List<Account> accounts = new ArrayList<>();
 
+    private YN isOperation;
+
+    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinColumn(name = "account_id")
+    private Account director;
+
+    private ZonedDateTime openedAt;
+    private YN isOpen;
+    private int fixedPeople;
+    private int currentPeople;
 
     public void addAccount(Account account) {
         this.getAccounts().add(account);
+    }
+
+    public void addDirector(Account account){
+        this.director = account;
     }
 }

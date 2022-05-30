@@ -15,6 +15,7 @@
     <description>plates</description>
     <properties>
         <java.version>11</java.version>
+        <maven.test.skip>true</maven.test.skip>
     </properties>
     <dependencies>
         <dependency>
@@ -63,7 +64,10 @@
             <artifactId>aws-mysql-jdbc</artifactId>
             <version>1.0.0</version>
         </dependency>
-
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
         <!--QueryDsl-->
         <dependency>
             <groupId>com.querydsl</groupId>

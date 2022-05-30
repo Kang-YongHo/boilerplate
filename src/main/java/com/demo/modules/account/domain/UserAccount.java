@@ -1,6 +1,6 @@
 package com.demo.modules.account.domain;
 
-import com.demo.modules.account.type.Role;
+import com.demo.modules.common.type.Role;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 import org.springframework.security.core.GrantedAuthority;
@@ -91,9 +91,8 @@ public class UserAccount extends User implements OAuth2User, UserDetails {
     }
 
     /**
-     * OAUth2 로그인 시 비밀번호가 없기때문에 그대로 password가 null인채로 User클래스에 담게되면 에러가 발생항. 이를 방지하기 위해 OAUth2일 시
-     * password를 ""로 담는다.
-     *
+     * OAUth2 로그인 시 비밀번호가 없기때문에 그대로 password가 null인채로 User클래스에 담게되면 에러가 발생함.
+     * 이를 방지하기 위해 OAUth2일 시 password를 ""로 담는다.
      * @param account
      * @return
      */

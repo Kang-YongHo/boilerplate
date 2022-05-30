@@ -1,7 +1,7 @@
 package com.demo.modules.account.domain;
 
 import com.demo.modules.account.application.request.AccountUpdateRequest;
-import com.demo.modules.account.type.Role;
+import com.demo.modules.common.type.Role;
 import com.demo.modules.common.domain.BaseEntity;
 import com.demo.modules.education.domain.Education;
 import com.demo.modules.organization.domain.Organization;
@@ -42,6 +42,7 @@ public class Account extends BaseEntity {
     private boolean isEmailVerified;
     private String profileImage;
 
+    @Enumerated(EnumType.STRING)
     private Role role;
 
     @ManyToMany(mappedBy = "accounts")
@@ -50,6 +51,10 @@ public class Account extends BaseEntity {
 
     @ManyToOne
     private Organization organization;
+
+    @JsonIgnore
+    @OneToOne(mappedBy = "director", fetch = FetchType.LAZY)
+    private Organization director;
 
     public Account(String name, String email, String picture) {
         this.name = name;

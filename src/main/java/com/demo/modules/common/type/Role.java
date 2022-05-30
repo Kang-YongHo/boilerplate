@@ -1,6 +1,7 @@
-package com.demo.modules.account.type;
+package com.demo.modules.common.type;
 
 public enum Role {
+    SUPER_ADMIN("ROLE_SUPER_ADMIN,ROLE_ADMIN"),
     ADMIN("ROLE_ADMIN"),
     USER("ROLE_USER");
 

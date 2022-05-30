@@ -1,8 +1,7 @@
 package com.demo.modules.account.application;
 
 import com.demo.modules.account.application.request.AccountUpdateRequest;
-import com.demo.modules.account.domain.UserAccount;
-import com.demo.modules.account.type.Role;
+import com.demo.modules.common.type.Role;
 import com.demo.modules.education.application.EducationService;
 import com.demo.modules.education.domain.Education;
 import com.demo.modules.education.infra.EducationRepository;
@@ -14,9 +13,6 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
